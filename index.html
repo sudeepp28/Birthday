@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Birthday Surprise</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<audio id="birthdayMusic" src="music\WhatsApp Audio 2026-07-07 at 10.35.06 AM.mpeg" loop></audio>
+
+<div class="app">
+
+  <!-- 1 Welcome -->
+  <section class="screen active welcome-screen">
+    <div class="lights"></div>
+    <div class="sparkles"></div>
+
+    <h1>Hey Bhindi 💕</h1>
+    <p>Something special<br>is waiting for you</p>
+
+    <div class="gift-box">🎁</div>
+
+    <button onclick="nextScreen()">Tap to Open 🎁</button>
+    <small>Tap Anywhere</small>
+  </section>
+
+  <!-- 2 Unlock -->
+   <!-- Step 1 -->
+  <section class="screen unlock-screen">
+    <div class="lock">🔐</div>
+    <h2>Shhh... it’s a surprise! 💗</h2>
+    <p>Enter your nickname to unlock</p>
+
+    <input id="passwordInput" type="text" placeholder="Enter here..." />
+    <button onclick="unlockSurprise()">Unlock 🔒</button>
+
+    <small>Only for my favorite person ♡</small>
+  </section>
+
+  <!-- Step 2 -->
+<section class="screen unlock2-screen">
+
+    <div class="lock">🫶</div>
+
+    <h2>Yay! That's correct 💖</h2>
+
+    <p>One last question...</p>
+
+    <h3>What's the nickname of the world's best brother? 😎</h3>
+
+    <input
+        id="brotherInput"
+        type="text"
+        placeholder="Type here..."
+    >
+
+    <button onclick="unlockBrother()">
+        Continue ❤️
+    </button>
+
+</section>
+
+  <!-- 3 Birthday Reveal -->
+  <section class="screen birthday-screen">
+    <div class="balloons">🎈 🎈 🎈</div>
+    <h1>Happy<br>Birthday<br>Bhindi ❤️</h1>
+    <p>You are so special! ♡</p>
+
+    <div class="cake">🎂</div>
+
+    <button onclick="nextScreen()">See Memories 📸</button>
+  </section>
+
+  <!-- 4 Memories -->
+   
+  <section class="screen memory-screen">
+    <button class="back" onclick="prevScreen()">←</button>
+    <h2>Our Memories 💕</h2>
+    <p>Swipe to see more ♡</p>
+
+    <div class="polaroid">
+      <span id="memoryCount">1 /5</span>
+      <img id="memoryImage" src="images/WhatsApp Image 2026-07-07 at 9.48.08 AM.jpeg" alt="Memory" />
+      <p id="memoryCaption">My forever favorite selfie partner. 💛</p>
+    </div>
+
+    <div class="memory-buttons">
+      <button onclick="prevMemory()">←</button>
+      <button class="heart">♥</button>
+      <button onclick="nextMemory()">→</button>
+    </div>
+
+    <button onclick="nextScreen()">Read Letter 💌</button>
+  </section>
+
+  <!-- 5 Letter -->
+  <section class="screen letter-screen">
+    <button class="back" onclick="prevScreen()">←</button>
+    <h2>A little note for you 💗</h2>
+    <h4>please read it full</h4>
+
+    <div class="letter">
+      <p>
+    My Dearest Bhindi ❤️,
+<br><br>
+Happy Birthday to the most amazing sister anyone could ever ask for!
+<br><br>
+As your elder brother, I've always wanted to see you happy, smiling, and living your best life. Watching you grow into the wonderful person you are today makes me incredibly proud.
+<br><br>
+There's one thing I genuinely miss, though. I miss those days when you used to tell me every tiny little thing that happened in your day. Whether it was something funny, something exciting, or even the smallest random incident, you would always come and share it with me. Those conversations were my favorite part of the day, and I didn't realize how much they meant until they slowly became less frequent.
+<br><br>
+Now life has become busier, and I know everyone grows up. And yes... I also know you're busy with your **ladkabaziii** these days. 😂❤️ So I guess someone else gets to hear all those daily stories before I do! I'm not jealous... okay, maybe just a little. 😄
+<br><br>
+But promise me one thing—no matter how busy life gets, don't forget your big brother. I still want to hear your random stories, your excitement, your complaints, your achievements, and even your overthinking. I'll always be here to listen, just like before.
+<br><br>
+I pray that this birthday brings you endless happiness, good health, success, beautiful memories, and all the love you deserve. May every dream you have come true, and may your smile never fade.
+<br><br>
+Always remember that no matter what happens in life, you'll always have your big brother standing beside you, cheering for you, protecting you, and believing in you.
+<br><br>
+Happy Birthday once again, Bhindi! 🎂💖
+<br><br>
+Love you always,
+<br><br>
+**Your Big Brother ❤️**
+
+      </p>
+    </div>
+
+    <button onclick="nextScreen()">Final Surprise ✨</button>
+  </section>
+
+  <!-- 6 Final -->
+ <!-- 6 Final -->
+<section class="screen final-screen">
+
+    <button class="back" onclick="prevScreen()">←</button>
+
+    <div class="fireworks">✨ 🎆 ✨</div>
+
+    <h2>Ready for the</h2>
+
+    <h1>Final Surprise? 💕</h1>
+
+    <p>This is my favorite part just for you!</p>
+
+    <div class="open-gift">🎁</div>
+
+    <button onclick="showFinalMessage()">Open Your Gift ✨</button>
+
+    <small>I hope you love it 💗</small>
+
+</section>
+
+</div>
+
+<!-- <div id="popup" class="popup">
+  <div>
+    <h2>Surprise! 💖</h2>
+    <p>You are the best sister ever. Happy Birthday Didi! 🎂✨</p>
+    <button onclick="closePopup()">Awww 🥹</button>
+  </div>
+</div> -->
+<div id="popup" class="popup">
+  <div class="popup-card">
+
+    <img
+      src="images/Bhindi.jpg"
+      alt="Birthday Surprise"
+      class="popup-image"
+    >
+
+    <button onclick="closePopup()">Awww 🥹</button>
+
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
