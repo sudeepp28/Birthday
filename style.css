@@ -348,6 +348,7 @@ small {
   display: block;
   border-radius: 20px;
   box-shadow: 0 15px 40px rgba(255,105,180,.4);
+  background:#fff;
 }
 
 .popup-card button {
@@ -427,3 +428,69 @@ small {
     transform: scale(1.08);
     background: rgba(255,255,255,.28);
 } */
+
+.reason-question-screen,
+.reason-result-screen {
+  background: radial-gradient(circle at top, #5b173e, #21051f);
+}
+
+.reason-question-screen h2 {
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+.quiz-options {
+  width: 100%;
+  max-width: 340px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.quiz-options label {
+  cursor: pointer;
+}
+
+.quiz-options input {
+  display: none;
+}
+
+.quiz-options span {
+  display: block;
+  width: 100%;
+  padding: 17px 18px;
+  border-radius: 22px;
+  background: rgba(255,255,255,0.14);
+  border: 2px solid rgba(255,255,255,0.22);
+  color: #fff;
+  font-size: 17px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.18);
+}
+
+.quiz-options input:checked + span {
+  background: linear-gradient(135deg, #ff5aa5, #b755df);
+  border-color: #fff;
+  transform: scale(1.03);
+}
+
+.reason-result-screen h1 {
+  font-size: 42px;
+  color: #ffe2a8;
+  margin-top: 15px;
+}
+.tap-animation{
+    font-size:42px;
+    animation:tap 1s infinite;
+}
+
+@keyframes tap{
+
+    0%,100%{
+        transform:translateY(0);
+    }
+
+    50%{
+        transform:translateY(12px);
+    }
+
+}

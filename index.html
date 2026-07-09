@@ -8,7 +8,7 @@
 </head>
 <body>
 
-<audio id="birthdayMusic" src="music\WhatsApp Audio 2026-07-07 at 10.35.06 AM.mpeg" loop></audio>
+<audio id="birthdayMusic" src="music\ReelAudio-24524.mp3" loop></audio>
 
 <div class="app">
 
@@ -62,6 +62,38 @@
 
 </section>
 
+<!-- Reasons Question -->
+<section class="screen reason-question-screen">
+  <h2>❤️ Reasons You're Amazing?</h2>
+
+  <div class="quiz-options">
+    <label>
+      <input type="radio" name="reason" value="sister">
+      <span>Because you're my sister</span>
+    </label>
+
+    <label>
+      <input type="radio" name="reason" value="brother">
+      <span>Because I am your brother</span>
+    </label>
+
+    <label>
+      <input type="radio" name="reason" value="both">
+      <span>Both</span>
+    </label>
+  </div>
+
+  <button onclick="submitReason()">Submit 💖</button>
+</section>
+
+<!-- Reason Result -->
+<section class="screen reason-result-screen">
+  <h2>Yaay! 😂❤️</h2>
+  <p>I knew it...</p>
+  <h1>I am the reason 😎</h1>
+
+  <button onclick="nextScreen()">Next 🎂</button>
+</section>
   <!-- 3 Birthday Reveal -->
   <section class="screen birthday-screen">
     <div class="balloons">🎈 🎈 🎈</div>
@@ -231,12 +263,23 @@ With lots of love,
   <div class="popup-card">
 
     <img
-      src="images/Bhindi.jpg"
+      src="images/WhatsApp Image 2026-07-09 at 8.31.48 PM.png"
       alt="Birthday Surprise"
       class="popup-image"
     >
 
-    <button onclick="closePopup()">Awww 🥹</button>
+   <div class="aww-btn-wrapper">
+
+
+
+<button onclick="closePopup()">
+    Awww 🥹
+</button>
+<div class="tap-animation">
+    👆
+</div>
+
+</div>
 
   </div>
 </div>

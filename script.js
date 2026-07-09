@@ -9,7 +9,7 @@ function showScreen(index) {
     screens[index].classList.add("active");
 
     // Birthday Reveal Screen (index 3)
-    if (index === 3) {
+    if (index === 5) {
         if (music.paused) {
             music.currentTime = 0;
             music.play().catch(() => {});
@@ -61,7 +61,7 @@ function unlockBrother() {
 
     } else {
 
-        alert("Arre! You forgot your brother's nickname? 😂");
+        alert("Arre! You forgot your brother's nickname? It starts from T😂");
 
     }
 }
@@ -80,6 +80,10 @@ const memories = [
   {
     image: "images/WhatsApp Image 2026-07-07 at 9.48.09 AM (2).jpeg",
     caption: "Smiles that never go out of style. 😊❤️"
+  },
+   {
+    image: "images/WhatsApp Image 2026-07-09 at 8.35.49 PM.jpeg",
+    caption: "Another memory I'll always cherish. 🌸"
   },
   {
     image: "images/WhatsApp Image 2026-07-07 at 9.48.09 AM.jpeg",
@@ -116,7 +120,7 @@ function showFinalMessage() {
 function closePopup() {
   document.getElementById("popup").classList.remove("show");
 
-    const phone = "918398974086"; // Replace with your WhatsApp number
+    const phone = "918398974086"; 
 
     const message = encodeURIComponent(
         "Thank you for the surprise! ❤️🥹\n\nI loved it so much."
@@ -128,4 +132,15 @@ function closePopup() {
             "_blank"
         );
     }, 300);
+}
+
+function submitReason() {
+  const selected = document.querySelector('input[name="reason"]:checked');
+
+  if (!selected) {
+    alert("Select one option first 😜");
+    return;
+  }
+
+  nextScreen();
 }
