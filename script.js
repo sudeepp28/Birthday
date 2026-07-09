@@ -61,7 +61,7 @@ function unlockBrother() {
 
     } else {
 
-        alert("Arre! You forgot your brother's nickname? It starts from T😂");
+        alert("Arre! You forgot your brother's nickname? its Tinda😂");
 
     }
 }

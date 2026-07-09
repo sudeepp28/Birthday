@@ -494,3 +494,17 @@ small {
     }
 
 }
+.video-surprise-screen {
+  background: radial-gradient(circle at top, #3d0c4f, #17031f);
+}
+
+.surprise-video {
+  width: 100%;
+  max-width: 340px;
+  height: 65vh;
+  object-fit: cover;
+  border-radius: 24px;
+  margin-top: 24px;
+  box-shadow: 0 15px 40px rgba(255,105,180,.35);
+  border: 2px solid rgba(255,255,255,.25);
+}
